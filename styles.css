@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Fuentexd;
+    src: url(Keynord-Regular.otf);
+    font-weight: bold;
+  }
+
+#map {
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho completo */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Fuentexd;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup-content img {
+    display: block;
+    margin-bottom: 10px;
+    width: 5cm; /* Tamaño de las imágenes reducido */
+    height: auto;
+}
+
+p,h1{
+    font-family: Fuentexd;
+    justify-content: center;
+    text-align: center;
+}
+
+.cover {
+    height: 400px;
+    background-image:url(https://cdn.glitch.global/ac131eb0-2639-4df3-b8a5-10b503c569b6/cover.gif?v=1684266141646);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    font-family: Fuentexd;
+}

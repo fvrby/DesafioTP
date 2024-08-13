@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "titulo": "Computadora Dell",
+        "descripcion": "Marca: Dell, i7, 16GB RAM",
+        "lat": -33.452150,
+        "lng": -70.603530,
+        "imagen": "dell.png"
+    },
+    {
+        "id": 2,
+        "titulo": "Teléfono Samsung",
+        "descripcion": "Samsung Galaxy S10, 128GB",
+        "lat": -33.453000,
+        "lng": -70.602500,
+        "imagen": "samsung.png"
+    }
+]

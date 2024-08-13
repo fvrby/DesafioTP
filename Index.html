@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE-CICLA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-success text-white p-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <img src="img/Designer.jpeg" alt="Logo" class="h-10" style="width: 100px;">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#quienes-somos" class="nav-link text-white">Quiénes somos</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link text-white">Contacto</a></li>
+                    <li class="nav-item"><a href="#ingresar" class="nav-link text-white">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="bg-success text-white text-center py-5">
+        <h1 class="display-4">Dona Electrónica y Hagamos crecer la comunidad</h1>
+        <p class="lead">Ayuda al medioambiente, reduzcamos la huella de carbono y 
+            apoyemos a las personas necesitadas donando tus dispositivos electrónicos.</p>
+    </section>
+
+    <!-- Carrusel de Imágenes -->
+    <section class="container py-3">
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Designer (1).jpeg" class="d-block w-100" style="height: 5cm;" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Designer (2).jpeg" class="d-block w-100" style="height: 5cm;" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Designer (3).jpeg" class="d-block w-100" style="height: 5cm;" alt="Banner 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Mapa Interactivo -->
+    <section class="container py-5">
+        <div id="map" class="mb-5"></div>
+    </section>
+
+    <!-- TEXTITO -->
+    <h1>Beneficios</h1>
+    <p style="margin-right: 50px; margin-left: 50px;">
+        Al donar tus dispositivos electrónicos además de estar contribuyendo a disminuir la huella de carbono
+        estarás haciendo un cambio al planeta, a nuestra causa se han querido unir empresas que quieren hacer un cambio positivo
+        estas empresas con cada contribución otorgaran beneficios a quienes donen, las cuales pueden ser desde Gifcards hasta 
+        descuentos en sus servicios. Las empresas que nos acompañan en esta cruzada son:
+    
+      </p>
+    <!-- Empresas -->
+    <section class="container text-center py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/Designer (4).jpeg" class="img-fluid" alt="Empresa 1" style="width: 150px;">
+            </div>
+            <div class="col-md-4">
+                <img src="img/Designer (5).jpeg" class="img-fluid" alt="Empresa 2" style="width: 150px;">
+            </div>
+            <div class="col-md-4">
+                <img src="img/Designer (6).jpeg" class="img-fluid" alt="Empresa 3" style="width: 150px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Inicio Sección de tarjetas-->
+    <section>
+        <p style="margin-right: 50px; margin-left: 50px;">
+            ¿SABIAS QUE TUS DONACIONES PRODUCEN UN IMPACTO SIGNIFICATIVO EN EL MEDIOAMBIENTE?
+        
+          </p>
+        <!-- Orden de las tarjetas-->
+        <div class="container mt-5 mb-5">
+          <div class="row justify-content-center">
+            <!-- Tarjeta 1-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+              <div class="card">
+                <!-- Reemplazamos la img por div-->
+                <div
+                  title="J2 PRIME"
+                  class="cover cover-small"
+                  style="
+                    background-image: url(assets/j2.jpg);
+                  "
+                ></div>
+                <div class="card-body">
+                  <h5 class="card-title">Smartphones</h5>
+                  <p class="card-text fs-3">Impacto TOTAL: Aprox. 50</p>
+                  <p class="card-text fs-3">FASES CRITICAS: Manufactura(70%, uso y transporte)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Tarjeta 1 -->
+  
+            <!-- Tarjeta 2-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+              <div class="card">
+                <div
+                  title="Notebook"
+                  class="cover cover-small"
+                  style="
+                    background-image: url(assets/pc.avif);
+                  "
+                ></div>
+                <div class="card-body">
+                  <h5 class="card-title">Computadoras portatiles</h5>
+                  <p class="card-text fs-3">Impacto TOTAL: Aprox. 200-300</p>
+                  <p class="card-text fs-3">FASES CRITICAS: Manufactura(alrededor de 65%) uso(alrededor 30%)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Tarjeta 2 -->
+  
+            <!-- Tarjeta 3-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+              <div class="card">
+                <div
+                  title="Tablet"
+                  class="cover cover-small"
+                  style="
+                    background-image: url(assets/tablet.avif);
+                  "
+                ></div>
+                <div class="card-body">
+                  <h5 class="card-title">Tablets</h5>
+                  <p class="card-text fs-3">Impacto TOTAL: Aprox. 80-100</p>
+                  <p class="card-text fs-3">FASES CRITICAS: Manufactura(alrededor de 70% uso y transporte)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Tarjeta 3 -->
+
+            <!-- Tarjeta 4-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                  <div
+                    title="TV"
+                    class="cover cover-small"
+                    style="
+                      background-image: url(assets/tele.jpg);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Televisores</h5>
+                    <p class="card-text fs-3">Impacto TOTAL: Aprox. 500-700</p>
+                    <p class="card-text fs-3">FASES CRITICAS: Uso(alrededor del 70-80%), Manufactura</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Tarjeta 4 -->
+
+              <!-- Tarjeta 5-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                  <div
+                    title="Nintendo Switch"
+                    class="cover cover-small"
+                    style="
+                      background-image: url(assets/consola.jpeg);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Consolas de Videojuegos</h5>
+                    <p class="card-text fs-3">Impacto TOTAL: Aprox. 100-200</p>
+                    <p class="card-text fs-3">FASES CRITICAS: Manufactura y uso</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Tarjeta 5 -->
+
+              <!-- Tarjeta 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                <div class="card">
+                  <div
+                    title="SSD Kingston"
+                    class="cover cover-small"
+                    style="
+                      background-image: url(assets/unidad-ssd-kingston-500gb-snvs-500-m2-2280-nvme-pcie-2100mb-1700mb.jpg);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title">dispositivos de almacenamiento</h5>
+                    <p class="card-text fs-3">Impacto TOTAL: Aprox. 10-30</p>
+                    <p class="card-text fs-3">FASES CRITICAS: Manufactura y transporte</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Tarjeta 6 -->
+          </div>
+        </div>
+      </section>
+      <!-- Termino sección de tarjetas-->
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-4">
+        <p>Contactanos | Dirección: Brown Nte. 290, Ñuñoa, Santiago de Chile | Tel: +123 456 789</p>
+    </footer> 
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
